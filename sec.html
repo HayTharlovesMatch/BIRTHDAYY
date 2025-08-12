@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Angryyy</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+  body {
+    background: linear-gradient(135deg, #fff0f5, #ffe6f0);
+    font-family: 'Baloo 2', cursive, 'Comic Sans MS', cursive;
+    color: #c66b2d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    user-select: none;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: inset 0 0 80px #ffb6c1;
+    position: relative;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #d9790a;
+    text-shadow: 1px 1px 3px #fcd581;
+    animation: shake 0.8s ease-in-out infinite alternate;
+    position: relative;
+    z-index: 10;
+  }
+
+  @keyframes shake {
+    0% { transform: rotate(1deg); }
+    100% { transform: rotate(-1deg); }
+  }
+
+  p {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    color: #b05d0f;
+    text-shadow: 0 0 6px #ffdf9e;
+    max-width: 360px;
+    line-height: 1.4;
+    position: relative;
+    z-index: 10;
+  }
+
+  img {
+    width: 200px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(255, 160, 120, 0.7);
+    animation: float 4s ease-in-out infinite;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  img:hover {
+    transform: scale(1.08) rotate(3deg);
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+
+  button {
+    background-color: #fcd581;
+    border: none;
+    padding: 15px 45px;
+    border-radius: 50px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: #5c3d2e;
+    font-weight: 900;
+    box-shadow: 0 6px 15px rgba(252, 213, 129, 0.7);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    user-select: none;
+    position: relative;
+    z-index: 10;
+  }
+
+  button:hover {
+    background-color: #f9d68c;
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(252, 213, 129, 0.9);
+  }
+
+  /* Pompompurin ears (cute effect) */
+  .ears {
+    position: absolute;
+    top: 25px;
+    left: calc(50% - 120px);
+    width: 260px;
+    height: 120px;
+    pointer-events: none;
+    z-index: 5;
+  }
+  .ear {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    background: #f9d68c;
+    border-radius: 70% 70% 60% 60% / 100% 100% 90% 90%;
+    filter: drop-shadow(0 3px 4px #c7a858);
+    animation: earPop 3s ease-in-out infinite;
+  }
+  .ear.left {
+    left: 0;
+    transform-origin: bottom center;
+  }
+  .ear.right {
+    right: 0;
+    transform-origin: bottom center;
+    animation-delay: 1.5s;
+  }
+
+  @keyframes earPop {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(10deg); }
+  }
+
+</style>
+</head>
+<body>
+
+<h1>Oops! You broke my heart with that NO! (  •̀⤙•́  )</h1>
+<p>NO means grumpy bunny mode activated!🐾
+<br>
+Tap “Matchaaa treat!” and I’ll forgive ya quick!(˶˃ ᵕ ˂˶) </p>
+
+<div class="ears">
+  <div class="ear left"></div>
+  <div class="ear right"></div>
+</div>
+
+<img src="https://i.pinimg.com/originals/e3/ff/89/e3ff8925d9bf1b159c95694d2db8579d.gif" alt="Pompompurin" />
+
+<button onclick="goBack()">Matchaaa treat 🍵</button>
+
+<script>
+  function goBack() {
+    window.location.href = 'first.html';
+  }
+</script>
+
+</body>
+</html>

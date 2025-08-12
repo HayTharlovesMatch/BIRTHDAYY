@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Birthday 🎂</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Baloo 2', cursive;
+      background: linear-gradient(135deg, #ffeaf5, #ffdff0);
+      color: #8a5a2b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+    body::before {
+      content: "♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡";
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 100px;
+      color: #ffb6c1aa;
+      user-select: none;
+      pointer-events: none;
+      animation: floatHearts 10s linear infinite;
+      white-space: nowrap;
+      filter: blur(3px);
+      letter-spacing: 60px;
+    }
+    @keyframes floatHearts {
+      0% { transform: translateX(-50%) translateY(100vh); }
+      100% { transform: translateX(-50%) translateY(-150vh); }
+    }
+
+    .card {
+      background: #ffbcd8;
+      border-radius: 30px;
+      padding: 25px 30px 25px;  /* super tight padding */
+      box-shadow:
+        0 6px 15px rgba(255, 182, 193, 0.3),
+        0 0 40px #ffaddd80 inset;
+      max-width: 380px;
+      position: relative;
+      z-index: 10;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow:
+        0 10px 30px rgba(255, 182, 193, 0.5),
+        0 0 70px #ffadddcc inset;
+    }
+    .photo {
+      width: 160px;  /* smaller photo */
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid #f5c74b;
+      box-shadow: 0 6px 12px #f5c74b99;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      margin: 10px auto 10px auto; /* tighter margin */
+      display: block;
+    }
+    .photo:hover {
+      transform: scale(1.1) rotate(5deg);
+      box-shadow: 0 10px 20px #f5c74bcc;
+    }
+    h1 {
+      font-size: 24px;  /* smaller font */
+      margin: 10px 0 8px;
+      color: #b75222;
+      text-shadow: 1px 1px 4px #ffd5b0cc;
+      line-height: 1.2;
+    }
+    p {
+      font-size: 17px;  /* smaller font */
+      margin: 6px 0;
+      line-height: 1.3;
+      color: #9b5c2cdd;
+      letter-spacing: 0.02em;
+      font-weight: 500;
+    }
+    .decor {
+      font-size: 28px;  /* smaller decor text */
+      color: #e95e91;
+      font-weight: 700;
+      margin: 8px 0 10px;
+      letter-spacing: 0.15em;
+      text-shadow: 0 0 8px #ff9fc7;
+      user-select: none;
+      position: relative;
+    }
+    .decor::after {
+      content: "❤";
+      position: absolute;
+      top: 0;
+      right: -25px;
+      font-size: 28px;
+      color: #ff6699;
+      animation: beat 1.5s infinite;
+      user-select: none;
+    }
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="decor">Hope You Like My Gift ‹𝟹</div>
+    <img src="zen.jpg" alt="BF Photo" class="photo" />
+    <h1>Happy Birthday MY POOKIE WOOKIE SWEET BOY ♡︎</h1>
+    <p>19 looks good on you frfr</p>
+    <p>I love our late-night talks n all the silly stuff we do even from far away ૮₍˃̵֊ ˂̵ ₎ა</p>
+    <p>Its wild how fast I got addicted to your laugh and those movie nights >⩊<</p>
+    <p>Missin’ you tons but sendin’ all the love from here :‹</p>
+    <div class="decor">Love yaaa</div>
+  </div>
+</body>
+</html>
